@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  background-image: url("../img/bg-desktop.png");
+  background-position: center 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(229, 57%, 11%);
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 40px;
+  margin: 320px auto;
+}
+.first-box {
+  background-color: hsl(228, 56%, 26%);
+  padding: 25px 90px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 70px;
+}
+.first-box .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.first-box .icons .border {
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 8px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-box .icons .border img {
+  width: 18px;
+}
+.second-box {
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 8px;
+  padding: 25px;
+  color: white;
+  height: 110px;
+  width: 380px;
+  position: relative;
+}
+.second-box p {
+  font-size: 11px;
+  font-weight: 200;
+}
+.second-box .info-box {
+  position: absolute;
+  background-color: white;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+  right: 35px;
+  top: -28px;
+}
+.info-box h4 {
+  color: hsl(229, 57%, 11%);
+  font-size: 26px;
+}
+.info-box p {
+  color: hsl(229, 7%, 55%);
+}
+.second-box .line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px 0;
+  width: 100%;
+  height: 15px;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 8px;
+  padding-left: 3px;
+}
+.second-box .line .red-line {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 8px;
+  padding-right: 1px;
+  width: 75%;
+  height: 11px;
+  background: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+.second-box .line .red-line .end {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+}
+.second-box .gb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 700px) {
+  body {
+    background-image: url("../img/bg-mobile.png");
+  }
+  .boxes {
+    flex-direction: column;
+    align-items: center;
+    margin: 150px auto;
+  }
+  .second-box,
+  .first-box {
+    width: 300px;
+  }
+}
